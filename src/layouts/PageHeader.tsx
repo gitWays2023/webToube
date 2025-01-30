@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import logo from "../assets/Logo.png";
 import { ArrowLeft, Bell, Menu, Mic, Search, Upload, User } from "lucide-react";
 import { Button } from "../components/Button";
@@ -7,7 +7,6 @@ import { useSidebarContext } from "../contexts/SidebarContext";
 export default function PageHeader() {
   const [showFullWidthSearch, setShowFullWidthSearch] = useState(false);
 
-  const { toggle } = useSidebarContext();
 
   return (
     <div className="flex gap-10 lg:gap-20 justify-between pt-2 mb-6 mx-4">
